@@ -1,0 +1,278 @@
+@import url("https=//fonts.googleapis.com/css?family=Kaushan+Script");
+body {
+  font-family: "Kaushan Script", cursive;
+  background: #fff;
+  color: #000;
+}
+
+.btn-pink {
+  color: #ef7998 !important;
+  border-color: #ef7998 !important;
+}
+
+.btn-pink:hover {
+  color: #000 !important;
+  background: #ef7998;
+}
+
+.btn-black {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-black:hover {
+  color: #ef7998;
+  background: #ef7998;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: #ef7998;
+}
+
+.nav-link,
+.header-link {
+  color: #ef7998;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover,
+.header-link:hover {
+  color: #000;
+}
+
+.header-link {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  -webkit-animation: fromBottom 4s infinite;
+          animation: fromBottom 4s infinite;
+}
+
+.header-link:hover {
+  color: #242424;
+}
+
+@-webkit-keyframes fromBottom {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.cart-info,
+.banner-link {
+  border: 0.1rem solid #000;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.cart-info:hover,
+.banner-link:hover {
+  background: #ef7998;
+  border-color: #ef7998;
+  color: #fff;
+}
+
+.max-height {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 228, 148, 0.5)), to(rgba(249, 228, 148, 0.5))), url(../img/headerBcg.jpeg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(249, 228, 148, 0.5), rgba(249, 228, 148, 0.5)), url(../img/headerBcg.jpeg) center/cover fixed no-repeat;
+  min-height: calc(100vh - 76px);
+  position: relative;
+}
+
+.banner {
+  color: #fff;
+  margin-top: -4rem;
+}
+
+.banner-title {
+  color: #ef7998;
+  font-size: 4rem;
+}
+
+.banner-link {
+  font-size: 1.5rem;
+}
+
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid #f9e494;
+  z-index: -1;
+}
+
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.store {
+  background: #eeeeee;
+}
+
+.search-box {
+  background: #ef7998;
+  color: #000;
+}
+
+.single-item {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.single-item:hover {
+  -webkit-box-shadow: 0 10px 15px #000;
+          box-shadow: 0 10px 15px #000;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container:hover .store-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.img-container:hover .store-item-icon {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.store-img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: #f9e494;
+  border-top-left-radius: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+}
+
+.services {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/servicesBcg.jpeg") center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/servicesBcg.jpeg") center/cover fixed no-repeat;
+}
+
+.service-title {
+  letter-spacing: 0.5rem;
+}
+
+.service-text {
+  word-spacing: 0.5rem;
+}
+
+.footer-title {
+  background: black;
+}
+
+.footer-contact {
+  background: #eeeeee;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-transition: all 0.4 ease-in-out;
+  transition: all 0.4 ease-in-out;
+}
+
+.footer-icon:hover {
+  color: #ef7998;
+}
+
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+
+.show-cart {
+  -webkit-transform: rotateY(-360deg);
+          transform: rotateY(-360deg);
+  width: 20rem;
+  padding: 2rem 1.5rem;
+}
+
+.cart-item-remove {
+  color: #ef7998;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.cart-item-remove:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #000;
+}
+
+.cart-item {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.cart-item-price {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */
